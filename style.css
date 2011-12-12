@@ -1,0 +1,82 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#nav {
+	background: #BFEEFF;
+	font-size: 1.2em;
+	padding: 5px 16px;
+}
+	#nav a:link,
+	#nav a:visited {
+		color: #21658D;
+		padding: 0 4px 0 0;
+	}
+	#nav a:hover {
+		color: #3A99D1
+	}
+
+#form {
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	background: #F4F4C1;
+	margin: 6px auto 0;
+	padding: 14px;
+	width: 370px;
+}
+	#form label,
+	#form input {
+		float: left;
+		font-size: 1.2em;
+	}
+	
+	#form #doLogin {
+		font-size: 1em;
+		margin: 0 0 0 100px;
+		padding: 3px 6px;
+		width: auto;
+	}
+	#form #createAccount {
+		font-size: 1em;
+		margin: 0 0 0 160px;
+		padding: 3px 6px;
+		width: auto;
+	}
+	
+	#form label {
+		color: #5E603C;
+		text-align: right;
+		margin: 0 10px 0 0;
+		padding-top: 4px;
+	}
+	
+	#loginForm label {width: 90px}
+	#registrationForm label {width: 150px}
+	
+	#form input {
+		margin: 0 0 8px 0;
+		padding: 0;
+		width: 200px
+	}
+	
+	#loginForm input#login,
+	#loginForm input#password {
+		width: 240px;
+	}
+	
+	br {
+		clear: both;
+	}
+
+#container {
+	margin: 12px auto 0;
+	padding: 1px;
+	width: 900px;
+}
+	#container h1#title {
+		font-family: Arial, Tahoma;
+		text-align: center;
+		margin: 0;
+	}

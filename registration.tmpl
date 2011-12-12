@@ -1,0 +1,13 @@
+<div id="form">
+<form id="registrationForm" action="" method="POST">
+	<?php foreach($registrationFormField as $field => $value) {
+			if( $value['label'] ) { ?>
+				<label>
+					<?php echo $value['label']; ?>
+				</label>
+			<?php } ?>
+			<input type="<?php echo $value['type']; ?>" value="<?php echo $value['value']; ?>" id="<?php echo $value['id']; ?>" name="<?php echo $value['name']; ?>" />  
+			<br />
+	<?php } ?>
+</form>
+</div>

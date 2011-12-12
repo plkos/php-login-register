@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><?php echo $title; ?></title>
+	<link href="./style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="nav">
+<?php foreach ($navigation as $key => $value) { ?>
+	<a class="<?php echo $key; ?>" href="<?php echo $value['href']; ?>"><?php echo $value['text']; ?></a>
+<?php } ?>
+</div>
+
+
