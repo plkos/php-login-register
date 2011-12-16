@@ -6,15 +6,21 @@ error_reporting(E_ALL);
 $navigation = array(
 	"home" => array(
 		"href" => "?home",
-		"text" => "Home"
+		"text" => "Home",
+		"title" => "Home page",
+		"template" => "home.tmpl"
 	),
 	"login" => array(
 		"href" => "?login",
-		"text" => "Login"
+		"text" => "Login",
+		"title" => "Please login",
+		"template" => "login.tmpl"
 	),
 	"registration" => array(
 		"href" => "?registration",
-		"text" => "Registration"
+		"text" => "Registration",
+		"title" => "Create new account",
+		"template" => "registration.tmpl"
 	)
 );
 
@@ -28,19 +34,6 @@ if( count($url) ) { // if something was received from $_GET
 		$page = 'home'; // go to home if asked page doesn't exist
 	}
 }
-
-
-$pageTitle = array(
-	"home" => "Home page",
-	"login" => "Please login",
-	"registration" => "Create new account"
-);
-
-$pageTemplate = array(
-	"home" => "home.tmpl",
-	"login" => "login.tmpl",
-	"registration" => "registration.tmpl"
-);
 
 $loginFormField = array(
 	"login" => array(
@@ -104,8 +97,8 @@ $registrationFormField = array(
 	)
 );
 
-$title = $pageTitle[$page];
-$template = $pageTemplate[$page];
+$title = $navigation[$page["title"]];
+$template = $navigation[$page["template"]];
 
 include_once './header.tmpl';
 include_once './context.tmpl';
